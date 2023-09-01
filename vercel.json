@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "builds": [{ "src": "api/src/server.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "api/src/server.js" }],
+  "builds": [{ "src": "api/src/index.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "api/src/index.js" }],
   "env": {
     "MY_VAR": "my-value"
   }
