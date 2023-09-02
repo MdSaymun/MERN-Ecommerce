@@ -13,4 +13,6 @@ const orderSchema = new mongoose.Schema({
   status: { type: String, required: true, default: "Pending" },
 });
 
-module.exports = mongoose.model("Order", orderSchema);
+const OrderModel = mongoose.model("Order", orderSchema);
+
+module.exports = OrderModel;
